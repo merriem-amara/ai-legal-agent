@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Environment
+.env
+.env.*
+
+# Build
+.next/
+dist/
+build/
+
+# Mobile
+.expo/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
