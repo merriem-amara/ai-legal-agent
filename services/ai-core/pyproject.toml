@@ -1,0 +1,18 @@
+[project]
+name = "ai-legal-core"
+version = "0.1.0"
+description = "AI Legal Agent intelligence engine"
+requires-python = ">=3.12"
+
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+    "python-dotenv",
+    "pydantic-settings>=2.15.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "src"
+]
