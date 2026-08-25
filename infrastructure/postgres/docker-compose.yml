@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: ai-legal-postgres
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_USER: legal_agent
+      POSTGRES_PASSWORD: legal_agent_password
+      POSTGRES_DB: legal_agent
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

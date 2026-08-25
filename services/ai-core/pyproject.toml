@@ -12,6 +12,10 @@ dependencies = [
     "python-dotenv",
     "pymupdf",
     "python-multipart>=0.0.32",
+    "sqlalchemy>=2.0.52",
+    "psycopg[binary]>=3.3.4",
+    "alembic>=1.19.1",
+    "pgvector>=0.5.0",
 ]
 
 [build-system]
